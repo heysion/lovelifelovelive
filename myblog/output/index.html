@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="zh_cn">
+    <head>
+    <meta charset="utf-8">
+    <meta name="description" content="#热爱生命永葆火热的激情!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>孑影 技术&amp;生活</title>
+
+    
+            <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/theme.css" rel="stylesheet" type="text/css">
+
+    
+
+      <link rel="canonical" href="#">
+
+
+
+    
+        <!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]-->
+
+    
+
+
+
+
+</head>
+<body>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+
+                <span id="blog-title">孑影  技术&amp;生活</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                
+                <li>
+<a href="categories/index.html">标签</a>
+                </li>
+<li>
+<a href="archive.html">存档</a>
+                </li>
+<li>
+<a href="stories/about-me.html">关于我</a>
+
+                
+            </li>
+</ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                
+                
+                
+            </ul>
+        </div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav>
+
+<!-- End of Menubar -->
+
+<div class="container">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+<div class="postindex">
+    <article class="h-entry post-text">
+    <header>
+        <h1 class="p-name entry-title"><a href="posts/qian-yi-blog.html" class="u-url">迁移Blog</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Heysion</span></p>
+            <p class="dateline"><a href="posts/qian-yi-blog.html" rel="bookmark"><time class="published dt-published" datetime="2014-08-30T00:22:42+08:00" itemprop="datePublished" title="Publication date">2014-08-30 00:22</time></a></p>
+        </div>
+    </header>
+    <div class="p-summary entry-summary">
+    Write your post here.
+    </div>
+    </article>
+    <article class="h-entry post-text">
+    <header>
+        <h1 class="p-name entry-title"><a href="posts/nei-cun-chi-she-ji-si-lu-1.html" class="u-url">内存池设计思路（1）</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Heysion</span></p>
+            <p class="dateline"><a href="posts/nei-cun-chi-she-ji-si-lu-1.html" rel="bookmark"><time class="published dt-published" datetime="2012-05-15T23:06:19+08:00" itemprop="datePublished" title="Publication date">2012-05-15 23:06</time></a></p>
+        </div>
+    </header>
+    <div class="p-summary entry-summary">
+    <p>状态：设计草案</p>
+<p>代码：未完成</p>
+<p>内存池原理，</p>
+<p>每次 new 和 malloc 向系统申请内存比较消耗时间，且一般这种需求下面内存消耗都是不确定的，那么申请次数一般情况下面都是多次，一般情况下面内存大小又不一样</p>
+<p class="more"><a href="posts/nei-cun-chi-she-ji-si-lu-1.html">更多…</a></p>
+    </div>
+    </article>
+    <article class="h-entry post-text">
+    <header>
+        <h1 class="p-name entry-title"><a href="posts/strcpyliang-chong-xie-fa-de-kan-fa.html" class="u-url">strcpy两种写法的看法</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Heysion</span></p>
+            <p class="dateline"><a href="posts/strcpyliang-chong-xie-fa-de-kan-fa.html" rel="bookmark"><time class="published dt-published" datetime="2011-11-08T09:11:16+08:00" itemprop="datePublished" title="Publication date">2011-11-08 09:11</time></a></p>
+        </div>
+    </header>
+    <div class="p-summary entry-summary">
+    <p>源代码直接Copy 见谅
+据说这个是GNU的写法（my_strcpy2）</p>
+<pre class="code c literal-block">
+<span class="ln"> 1 </span> <span class="kt">char</span> <span class="o">*</span>
+<span class="ln"> 2 </span> <span class="n">my_strcpy2</span> <span class="p">(</span><span class="n">dest</span><span class="p">,</span> <span class="n">src</span><span class="p">)</span>
+<span class="ln"> 3 </span>      <span class="kt">char</span> <span class="o">*</span><span class="n">dest</span><span class="p">;</span>
+<span class="ln"> 4 </span>      <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">src</span><span class="p">;</span>
+<span class="ln"> 5 </span> <span class="p">{</span>
+<span class="ln"> 6 </span>   <span class="k">register</span> <span class="kt">char</span> <span class="n">c</span><span class="p">;</span>
+<span class="ln"> 7 </span>   <span class="kt">char</span> <span class="o">*</span> <span class="n">s</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="p">)</span><span class="n">src</span><span class="p">;</span>
+<span class="ln"> 8 </span>   <span class="k">const</span> <span class="kt">int</span> <span class="n">off</span> <span class="o">=</span> <span class="n">dest</span> <span class="o">-</span> <span class="n">s</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+<span class="ln"> 9 </span>   <span class="k">do</span><span class="p">{</span>
+<span class="ln">10 </span>       <span class="n">c</span> <span class="o">=</span> <span class="o">*</span><span class="n">s</span><span class="o">++</span><span class="p">;</span>
+<span class="ln">11 </span>       <span class="n">s</span><span class="p">[</span><span class="n">off</span><span class="p">]</span> <span class="o">=</span> <span class="n">c</span><span class="p">;</span>
+<span class="ln">12 </span>     <span class="p">}</span><span class="k">while</span> <span class="p">(</span><span class="n">c</span> <span class="o">!=</span> <span class="sc">'\0'</span><span class="p">);</span>
+<span class="ln">13 </span>   <span class="k">return</span> <span class="n">dest</span><span class="p">;</span>
+<span class="ln">14 </span> <span class="p">}</span>
+</pre>
+<p>另外一种写法来自GFree_Wind（my_strcpy1）</p>
+<pre class="code c literal-block">
+<span class="ln"> 1 </span> <span class="kt">char</span><span class="o">*</span> <span class="nf">my_strcpy1</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">dest</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">src</span><span class="p">)</span>
+<span class="ln"> 2 </span> <span class="p">{</span>
+<span class="ln"> 3 </span>     <span class="kt">char</span> <span class="o">*</span><span class="n">d</span> <span class="o">=</span> <span class="n">dest</span><span class="p">;</span>
+<span class="ln"> 4 </span>     <span class="k">register</span> <span class="kt">char</span> <span class="n">c</span><span class="p">;</span>
+<span class="ln"> 5 </span>     <span class="k">do</span><span class="p">{</span>
+<span class="ln"> 6 </span>         <span class="n">c</span> <span class="o">=</span> <span class="o">*</span><span class="n">src</span><span class="o">++</span><span class="p">;</span>
+<span class="ln"> 7 </span>         <span class="o">*</span><span class="n">d</span><span class="o">++</span> <span class="o">=</span> <span class="n">c</span><span class="p">;</span>
+<span class="ln"> 8 </span>     <span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="sc">'\0'</span> <span class="o">!=</span> <span class="n">c</span><span class="p">);</span>
+<span class="ln"> 9 </span>     <span class="k">return</span> <span class="n">dest</span><span class="p">;</span>
+<span class="ln">10 </span> <span class="p">}</span>
+</pre>
+<p>根据 CFree_Wind 大牛的说法 （本人小菜）1的效率要高于2 详情如下</p>
+<p><a class="reference external" href="http://blog.chinaunix.net/space.php?uid=23629988&amp;do=blog&amp;id=2759769">http://blog.chinaunix.net/space.php?uid=23629988&amp;do=blog&amp;id=2759769</a></p>
+<p class="more"><a href="posts/strcpyliang-chong-xie-fa-de-kan-fa.html">更多…</a></p>
+    </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+        </div>
+        <!--End of body content-->
+
+        <footer>
+            Contents © 2014         <a href="mailto:heysions@gmial.com">Heysion</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         #热爱生命永葆火热的激情!
+            
+        </footer>
+    </div>
+</div>
+
+
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.colorbox-min.js"></script>
+        <script src="assets/js/colorbox-i18n/jquery.colorbox-zh-CN.js"></script>
+    
+<!-- Social buttons -->
+<div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+<a class="addthis_button_more">Share</a>
+<ul>
+<li>
+<a class="addthis_button_facebook"></a>
+</li>
+<li>
+<a class="addthis_button_google_plusone_share"></a>
+</li>
+<li>
+<a class="addthis_button_linkedin"></a>
+</li>
+<li>
+<a class="addthis_button_twitter"></a>
+</li>
+</ul>
+</div>
+<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+<!-- End of social buttons -->
+
+
+    <script>jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script>
+    
+
+
+</body>
+</html>
